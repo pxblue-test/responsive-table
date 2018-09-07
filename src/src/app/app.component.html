@@ -1,0 +1,36 @@
+<mat-toolbar color="primary">
+	<div>Responsive Table</div>
+	<div fxFlex style="margin:auto;"></div>
+</mat-toolbar>
+<mat-nav-list *ngIf="data.length > 0" fxShow.lt-md fxHide>
+	<mat-list-item *ngFor="let i of data" [ngClass]="{'selected': isSelected(i)}" (click)="onSelected(i)">
+		<div mat-line>
+			{{ i.name }}
+		</div>
+		<p mat-line>
+			{{ i.details }}
+		</p>
+	</mat-list-item>
+</mat-nav-list>
+<table mat-table fxShow fxHide.lt-md [dataSource]="data" class="mat-elevation-z8">
+    <!-- Weight Column -->
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef> Name </th>
+    <td mat-cell *matCellDef="let item"> {{item.name}} </td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="details">
+    <th mat-header-cell *matHeaderCellDef> Details </th>
+    <td mat-cell *matCellDef="let item"> {{item.details}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns; let i" [ngClass]="{'selected': isSelected(i)}" (click)="onSelected(i)"></tr>
+</table>
+<div *ngIf="data.length === 0" style="margin: 15px;">
+  <h1>No Items found </h1>
+	<button mat-raised-button (click)="onAddItem()">
+    Add An Item
+  </button>
+</div>
