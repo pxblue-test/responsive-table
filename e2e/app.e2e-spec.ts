@@ -1,4 +1,5 @@
 import { AngularTemplatePage } from './app.po';
+import {} from 'jasmine';
 
 describe('angular-template App', () => {
   let page: AngularTemplatePage;
