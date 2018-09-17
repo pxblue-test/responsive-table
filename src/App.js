@@ -61,25 +61,6 @@ class ResponsiveTable extends React.Component {
     const int = parseInt((Math.random() * 100) + '', 10);
     return this.createItem(int);
   }
-
-  onMenuClick(event, i) {
-    this.setState({ menuposition: event.currentTarget, activeMenu: i });
-  };
-  onMenuItemClick(option, i) {
-    if (option == 'Delete') {
-      let templist = this.state.list;
-      templist.splice(i, 1);
-      this.setState({ list: templist });
-    }
-    this.onMenuClose()
-  }
-  onMenuClose() {
-    this.setState({ menuposition: null, activeMenu: null });
-  }
-
-  onRemoveAll() {
-    this.setState({ list: [] });
-  }
   onSelected(item) {
     this.setState({ selectedIndex: item });
   }
@@ -106,18 +87,6 @@ class ResponsiveTable extends React.Component {
             <Typography variant="title" color="inherit">
               Responsive Table
           </Typography>
-            <div style={{ flex: '1 1 0px' }} />
-            <IconButton
-              color="inherit"
-              aria-label="Delete"
-              onClick={() => { this.onRemoveAll() }} >
-              <DeleteIcon />
-            </IconButton>
-            <IconButton
-              color="inherit"
-              aria-label="add" onClick={() => { this.onAddItem() }}>
-              <AddIcon />
-            </IconButton>
           </Toolbar>
         </AppBar>
         {this.state.list.length < 1 &&
@@ -130,13 +99,6 @@ class ResponsiveTable extends React.Component {
                 return (
                   <ListItem key={'item_' + i} button className={this.isSelected(i) ? 'selected' : null} onClick={() => this.onSelected(i)}>
                     <ListItemText primary={item.name} secondary={item.details}></ListItemText>
-                    <IconButton
-                      aria-label='More'
-                      aria-owns={menuposition ? 'long-menu' : null}
-                      aria-haspopup="true"
-                      onClick={(evt) => this.onMenuClick(evt, i)}>
-                      <MoreVertIcon />
-                    </IconButton>
                   </ListItem>
                 )
               })
@@ -165,20 +127,10 @@ class ResponsiveTable extends React.Component {
             </TableBody>
           </Table>
         </Hidden>
-        <Menu
-          id="long-menu"
-          anchorEl={menuposition}
-          open={Boolean(menuposition)}
-          onClose={this.onMenuClose.bind(this)}>
-          {options.map((option) => (
-            <MenuItem key={option} onClick={() => this.onMenuItemClick(option, this.state.activeMenu)}>
-              {option}
-            </MenuItem>
-          ))}
-        </Menu>
       </div>
     );
   }
 }
 
 export default ResponsiveTable;
+
