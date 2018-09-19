@@ -1,4 +1,4 @@
-# Basic Responsive-table Example
+# Responsive Table/List
 
 This is a sample application showing how to build a responsive table that works on larger screens and collapse the data into list at mobile size.
 
