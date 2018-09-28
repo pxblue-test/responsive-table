@@ -4,10 +4,10 @@ import App from './App';
 import './style.css';
 
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-import {EatonColors, EatonThemes} from '@pxblue/themes/react';
+import * as PXBThemes from '@pxblue/themes/react';
 
 render(
-  <MuiThemeProvider theme={createMuiTheme(EatonThemes.blue)}>
+  <MuiThemeProvider theme={createMuiTheme(PXBThemes.blue)}>
     <App />
   </MuiThemeProvider>
   , document.getElementById('root'));
