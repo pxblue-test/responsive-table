@@ -71,7 +71,7 @@ class ResponsiveTable extends React.Component {
   getEmptyComponent() {
     return (
       <div style={{ paddingLeft: "10px" }}>
-        <Typography variant="display1">No Items Found</Typography>
+        <Typography variant="h4">No Items Found</Typography>
         <Button variant="contained" onClick={() => this.onAddItem()}>Add an Item</Button>
       </div>
     );
@@ -84,7 +84,7 @@ class ResponsiveTable extends React.Component {
       <div>
         <AppBar position="static">
           <Toolbar>
-            <Typography variant="title" color="inherit">
+            <Typography variant="h6" color="inherit">
               Responsive Table
           </Typography>
           </Toolbar>
