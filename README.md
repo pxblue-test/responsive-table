@@ -1,5 +1,5 @@
 # Responsive Table/List
-[![CircleCI](https://circleci.com/gh/pxblue/responsive-table/tree/react.svg?style=shield)](https://circleci.com/gh/pxblue/responsive-table/tree/react)
+[![CircleCI](https://circleci.com/gh/pxblue/responsive-table/tree/react.svg?style=shield)](https://circleci.com/gh/pxblue/responsive-table/tree/react) 
 
 This is a sample application showing how to build a responsive table that works on larger screens and collapse the data into list at mobile size.
 
