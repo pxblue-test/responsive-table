@@ -97,7 +97,7 @@ class ResponsiveTable extends React.Component {
             <TableHead>
               <TableRow>
                 <TableCell>Name</TableCell>
-                <TableCell numeric>Details</TableCell>
+                <TableCell align="right">Details</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -107,7 +107,7 @@ class ResponsiveTable extends React.Component {
                     <TableCell component="th" scope="row">
                       {item.name}
                     </TableCell>
-                    <TableCell numeric>{item.details}</TableCell>
+                    <TableCell align="right">{item.details}</TableCell>
                   </TableRow>
                 );
               })}
