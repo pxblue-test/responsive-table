@@ -12,6 +12,13 @@
   },
   "version": "0.1.0",
   "private": true,
+  "browserslist": [
+    "last 2 Chrome versions",
+    "Firefox ESR",
+    "IE 11",
+    "Edge 16",
+    "Safari 11"
+  ],
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
