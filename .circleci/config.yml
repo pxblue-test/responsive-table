@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/resposive-table
+    working_directory: ~/responsive-table
     docker: 
       - image: circleci/node:8.11-browsers
     steps:
