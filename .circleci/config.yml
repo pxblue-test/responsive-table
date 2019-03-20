@@ -20,10 +20,4 @@ jobs:
           name: Install Dependencies
           command: yarn install
       - run: yarn test
-      - run:
-          name: e2e cypress tests
-          command: yarn cytest
-      - store_artifacts:
-          path: cypress/videos
-      - store_artifacts:
-          path: cypress/screenshots
+    
