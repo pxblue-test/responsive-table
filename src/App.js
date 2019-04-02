@@ -80,7 +80,7 @@ class ResponsiveTable extends React.Component {
           this.getEmptyComponent()
         }
         <Hidden mdUp>
-          <List style={{paddingLeft: '0px'}} component="nav">
+          <List style={{padding: '0px'}} component="nav">
             {
               this.state.list.map((item, i) => {
                 return (
