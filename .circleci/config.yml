@@ -16,8 +16,5 @@ jobs:
           paths:
             - ~/.cache
             - ./node_modules
-      - run:
-          name: Install Dependencies
-          command: yarn install
       - run: yarn test
     
