@@ -135,9 +135,10 @@
   dependencies:
     tslib "^1.7.1"
 
-"@angular/forms@^6.1.6":
+"@angular/forms@^6.1.10":
   version "6.1.10"
   resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-6.1.10.tgz#c9cd0f716cf91272e8e09e17a51fc20313df31b0"
+  integrity sha512-zAPx2kMV1/FbP5DrY472Sd/ze1m+GS6T5ullZCtP392r62p2RkwzDCXieR51YiRJjZj3M6c3AcRND7PWBdXT7A==
   dependencies:
     tslib "^1.9.0"
 
@@ -297,9 +298,10 @@
   version "3.3.7"
   resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-3.3.7.tgz#52f2bfe8d2995d4756585d2328c97fbb0fec66e3"
 
-"@types/jasmine@^2.8.8":
-  version "2.8.15"
-  resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-2.8.15.tgz#f4b73d8d9328ba5ad4bb9191ec117d10b7fd712c"
+"@types/jasmine@^2.8.16":
+  version "2.8.16"
+  resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-2.8.16.tgz#a6cb24b1149d65293bd616923500014838e14e7d"
+  integrity sha512-056oRlBBp7MDzr+HoU5su099s/s7wjZ3KcHxLfv+Byqb9MwdLUvsfLgw1VS97hsh3ddxSPyQu+olHMnoVTUY6g==
 
 "@types/jasminewd2@~2.0.3":
   version "2.0.6"
@@ -307,9 +309,10 @@
   dependencies:
     "@types/jasmine" "*"
 
-"@types/node@~10.9.4":
-  version "10.9.4"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.9.4.tgz#0f4cb2dc7c1de6096055357f70179043c33e9897"
+"@types/node@~8.9.4":
+  version "8.9.5"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.9.5.tgz#162b864bc70be077e6db212b322754917929e976"
+  integrity sha512-jRHfWsvyMtXdbhnz5CVHxaBgnV6duZnPlQuRSo/dm/GnmikNcmZhxIES4E9OZjUmQ8C+HCl4KJux+cXN/ErGDQ==
 
 "@types/q@^0.0.32":
   version "0.0.32"

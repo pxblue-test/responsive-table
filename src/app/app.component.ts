@@ -36,7 +36,7 @@ export class AppComponent implements OnInit {
     console.log(menu);
   }
   onSelected(item: any) {
-    console.log(item);
+   console.log(item);
     this.item = item;
   }
   isSelected(item: any) {
