@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { VERSION, MatMenuTrigger } from '@angular/material';
+import { VERSION } from '@angular/material/core';
+import { MatMenuTrigger } from '@angular/material/menu';
 
 @Component({
   selector: 'material-app',
@@ -32,11 +33,8 @@ export class AppComponent implements OnInit {
     }
     this.updateTable();
   }
-  onOpenMenu(menu: any): void {
-    console.log(menu);
-  }
+  onOpenMenu(menu: any): void { }
   onSelected(item: any) {
-   console.log(item);
     this.item = item;
   }
   isSelected(item: any) {
