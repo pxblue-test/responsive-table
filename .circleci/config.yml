@@ -3,7 +3,9 @@ jobs:
   build:
     working_directory: ~/responsive-table
     docker:
-      - image: circleci/node:10.16.0-browsers
+      # FOR IONIC node:10.9-browsers
+      # FOR ANGULAR, REACT, REACT-NATIVE node:12.6-browsers
+      - image: circleci/node:12.6-browsers
     steps:
       - checkout
       - restore_cache:
@@ -17,13 +19,10 @@ jobs:
             - ~/.cache
             - ./node_modules
       - run:
-          name: Build Angular
-          command: yarn ng build --prod --aot --no-progress
+          name: Build
+          command: yarn build # yarn build for all but React Native
       - run:
-          name: Test Angular
+          name: Test
+          # FOR ANGULAR AND IONIC: yarn test --watch=false --no-progress
+          # FOR REACT AND REACT-NATIVE: yarn test
           command: yarn test --watch=false --no-progress
-      - store_artifacts:
-          path: test-results/karma/results.xml
-          prefix: tests
-      - store_test_results:
-          path: test-results
