@@ -2,7 +2,9 @@ version: 2
 jobs:
   build:
     working_directory: ~/responsive-table
-    docker: 
+    docker:
+      # FOR IONIC node:10.9-browsers
+      # FOR ANGULAR, REACT, REACT-NATIVE node:12.6-browsers
       - image: circleci/node:12.6-browsers
     steps:
       - checkout
@@ -16,5 +18,11 @@ jobs:
           paths:
             - ~/.cache
             - ./node_modules
-      - run: yarn test
-    
+      - run:
+          name: Build
+          command: yarn build # yarn build for all but React Native
+      - run:
+          name: Test
+          # FOR ANGULAR AND IONIC: yarn test --watch=false --no-progress
+          # FOR REACT AND REACT-NATIVE: yarn test
+          command: yarn test
