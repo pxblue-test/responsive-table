@@ -6,7 +6,7 @@ This project demonstrates how to build a responsive table that works on larger s
 | Angular | [![CircleCI](https://circleci.com/gh/pxblue/responsive-table/tree/angular.svg?style=shield)](https://circleci.com/gh/pxblue/responsive-table/tree/angular) | [View on Stackblitz](https://stackblitz.com/github/pxblue/responsive-table/tree/angular)
 | React | [![CircleCI](https://circleci.com/gh/pxblue/responsive-table/tree/react.svg?style=shield)](https://circleci.com/gh/pxblue/responsive-table/tree/react) | [View on Code Sandbox](https://codesandbox.io/s/github/pxblue/responsive-table/tree/react)
 | Ionic | [![CircleCI](https://circleci.com/gh/pxblue/responsive-table/tree/ionic.svg?style=shield)](https://circleci.com/gh/pxblue/responsive-table/tree/ionic) | [View on Stackblitz](https://stackblitz.com/github/pxblue/responsive-table/tree/ionic)
-| React Native | [![CircleCI](https://circleci.com/gh/pxblue/responsive-table/tree/reactnative.svg?style=shield)](https://circleci.com/gh/pxblue/responsive-table/tree/reactnative) | [View on Snack](https://snack.expo.io/@git/github.com/pxblue/responsive-table@reactnative)
+| React Native | [![CircleCI](https://circleci.com/gh/pxblue/responsive-table/tree/reactnative.svg?style=shield)](https://circleci.com/gh/pxblue/responsive-table/tree/reactnative) | [View on Snack](https://snack.expo.io/@git/github.com/pxblue/responsive-table@reactnative?preview=true&platform=ios)
 
 ## Running the Example
 ### Angular
